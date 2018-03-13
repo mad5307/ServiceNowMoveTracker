@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope,$rootScope,$location,$timeout,$window) {
+	/* widget controller */
+	var c = this;
+	c.data.move_id = {value:null,displayValue:null};
+	
+	c.getBoxes = function(){
+		c.server.get({action:'getBoxes',move_id:c.data.move_id.value}).then(function(r){
+			c.data.response = r.data.response;
+			c.data.boxes = r.data.response.boxes;
+			for(var i = 0; i < c.data.boxes.length; i++){
+				var boxes = c.data.boxes[i].content.split(', ');
+				c.data.boxes[i].content = boxes;
+			}
+		});
+	};
+	
+	var url = $location.search();
+	if(url.move){
+		c.data.move_id.value = url.move;
+		c.data.move_id.displayValue = url.move_name;
+		c.getBoxes();
+	}
+
+	c.updateState = function(state,box){
+		c.server.get({action:'updateBox',box:box,state:state,move_id:c.data.move_id.value});
+		c.getBoxes();
+	};
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.title {
+  float: left;
+  font-size: 16px;
+  font-weight:bold;
+  color:black;
+}
+
+.cost {
+  float: right;
+  background-color:#428bca;
+  color:#fff;
+  border-radius:15px;
+  padding:5px;
+}
+.content {
+  float: left;
+  font-size: 14px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding-left: 1.3em;
+  }
+  li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+}
+
+.even {
+  background:#D9D7D8;
+}
+.odd {
+  background:#FBFBFB;
+}
+
+button .dropdown-toggle{
+  width:90px;
+  ul {
+    list-style: none;
+    padding-left: 5px;
+    width:60px;
+  }
+}
+
+.dropdown-menu {
+  min-width:90px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>box_scanner</id>
+        <internal>false</internal>
+        <link/>
+        <name>Box Scanner</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	if(input){
+		if(input.action == 'getBoxes'){
+			try { 
+				var r = new sn_ws.RESTMessageV2('x_26578_move_track.Move API', 'RetrieveBoxes');
+				r.setStringParameterNoEscape('move_id',input.move_id);
+
+				var response = r.execute();
+				var responseBody = response.getBody();
+				var httpStatus = response.getStatusCode();
+				data.response = JSON.parse(responseBody);
+			}
+			catch(ex) {
+				var message = ex.getMessage();
+			}
+		}
+
+		if(input.action == 'updateBox'){
+			try { 
+				var b = new sn_ws.RESTMessageV2('x_26578_move_track.Move API', 'Update Box State');
+				b.setStringParameterNoEscape('box_id', input.box.sys_id);
+				b.setStringParameterNoEscape('box_state', input.state);
+
+				var boxResponse = b.execute();
+				var boxResponseBody = boxResponse.getBody();
+				var boxhttpStatus = boxResponse.getStatusCode();
+			}
+			catch(exBox) {
+				var boxMessage = exBox.getMessage();
+			}
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>madeleonardis</sys_created_by>
+        <sys_created_on>2017-12-16 22:03:05</sys_created_on>
+        <sys_id>7f9e128a4f4f03008928a7d18110c759</sys_id>
+        <sys_mod_count>142</sys_mod_count>
+        <sys_name>Box Scanner</sys_name>
+        <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+        <sys_update_name>sp_widget_7f9e128a4f4f03008928a7d18110c759</sys_update_name>
+        <sys_updated_by>madeleonardis</sys_updated_by>
+        <sys_updated_on>2017-12-19 22:53:58</sys_updated_on>
+        <template><![CDATA[<div ng-show="data.move_id.value" style="text-align:center" class="row col-xs-12">
+  <a style="display: inline-block;width:100%" ng-href="?id=new_box&move={{data.move_id.value}}&move_name={{data.move_id.displayValue}}"><button type="button" class="btn btn-primary" style="width: 50%; margin-bottom: 15px;">New Box</button></a>
+</div>
+
+<div class="container col-xs-12">
+  <sn-record-picker field="data.move_id" table="'x_26578_move_track_move'" display-field="'name'" value-field="sys_id" search-fields="'name'" ng-change="c.getBoxes()"></sn-record-picker>
+  <br/>  
+</div>
+<div ng-show="data.response.status=='Success'" ng-repeat="box in data.boxes" class="well container col-xs-12"  ng-class-odd="'odd'" ng-class-even="'even'">
+  <div class="col-xs-10 title">
+    <i class="fa fa-dropbox" aria-hidden="true"></i> {{box.room}} - {{box.box_number}}
+  </div>
+  <div class="col-xs-2" style="float:right">
+    <!-- Single button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{box.box_state}} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item" ng-click="c.updateState('packing',box)">Packing</li>
+        <li class="dropdown-item" ng-click="c.updateState('packed',box)">Packed</li>
+        <li class="dropdown-item" ng-click="c.updateState('moved',box)">Moved</li>
+        <li class="dropdown-item" ng-click="c.updateState('unpacked',box)">Unpacked</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="col-xs-12 container content">
+    <ul style="float:left">
+      <li ng-repeat="items in box.content">
+        {{items}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div ng-show="data.move_id.value" style="text-align:center" class="container col-xs-12">
+  <a style="display: inline-block;width:100%" ng-href="?id=new_box&move={{data.move_id.value}}&move_name={{data.move_id.displayValue}}"><button type="button" class="btn btn-primary" style="width: 50%; margin-bottom: 15px;">New Box</button></a>
+</div>]]></template>
+    </sp_widget>
+</record_update>

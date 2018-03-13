@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_26578_move_track_move" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Moves - Default view" name="x_26578_move_track_move" related_list="NULL" sys_domain="global" view="Default view">bba482194f0303008928a7d18110c717</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_26578_move_track_box.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 12:14:20</sys_created_on>
+            <sys_id>7ba482194f0303008928a7d18110c718</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 12:14:20</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Moves - Default view</calculated_name>
+            <filter/>
+            <name>x_26578_move_track_move</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 12:14:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bba482194f0303008928a7d18110c717</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Moves - Default view</sys_name>
+            <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+            <sys_update_name>sys_ui_related_x_26578_move_track_move_null</sys_update_name>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 12:14:20</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

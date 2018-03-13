@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="room" table="x_26578_move_track_box" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Living room</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>0</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e3db5d14f0303008928a7d18110c7e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>living room</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dining room</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>1</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e3db5d14f0303008928a7d18110c7e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>dining room</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kitchen</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>2</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d63db5d14f0303008928a7d18110c7e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>kitchen</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bedroom</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>3</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>923db5d14f0303008928a7d18110c7e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>bedroom</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bathroom</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>4</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e3db5d14f0303008928a7d18110c7e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>bathroom</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>5</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a3db5d14f0303008928a7d18110c7e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>office</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Storage</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>6</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d23db5d14f0303008928a7d18110c7eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+            <value>storage</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>room</element>
+            <name>x_26578_move_track_box</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:41:44</sys_created_on>
+            <sys_id>d63db5d14f0303008928a7d18110c7e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>room</sys_name>
+            <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+            <sys_update_name>sys_choice_x_26578_move_track_box_room</sys_update_name>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:41:44</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="box_state" label="State" language="en" table="x_26578_move_track_box">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>box_state</element>
+            <help/>
+            <hint/>
+            <label>State</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <plural>States</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:45</sys_created_on>
+            <sys_id>d9de39154f0303008928a7d18110c7ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>State</sys_name>
+            <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+            <sys_update_name>sys_documentation_x_26578_move_track_box_box_state_en</sys_update_name>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:45</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

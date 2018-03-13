@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="New box - Container 1">e65a24ae4f8b43008928a7d18110c740</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>madeleonardis</sys_created_by>
+        <sys_created_on>2017-12-18 02:52:29</sys_created_on>
+        <sys_id>307aacae4f8b43008928a7d18110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+        <sys_update_name>sp_row_307aacae4f8b43008928a7d18110c7ac</sys_update_name>
+        <sys_updated_by>madeleonardis</sys_updated_by>
+        <sys_updated_on>2017-12-18 02:52:29</sys_updated_on>
+    </sp_row>
+</record_update>

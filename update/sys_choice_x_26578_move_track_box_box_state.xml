@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="box_state" table="x_26578_move_track_box" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>box_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>0</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95de39154f0303008928a7d18110c7fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>box_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Packing</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>1</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15de39154f0303008928a7d18110c7ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+            <value>packing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>box_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Packed</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>2</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddde79154f0303008928a7d18110c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+            <value>packed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>box_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Moved</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>3</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>99de79154f0303008928a7d18110c702</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+            <value>moved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>box_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unpacked</label>
+            <language>en</language>
+            <name>x_26578_move_track_box</name>
+            <sequence>4</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55de79154f0303008928a7d18110c704</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+            <value>unpacked</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>box_state</element>
+            <name>x_26578_move_track_box</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 11:48:46</sys_created_on>
+            <sys_id>ddde39154f0303008928a7d18110c7fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>box_state</sys_name>
+            <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+            <sys_update_name>sys_choice_x_26578_move_track_box_box_state</sys_update_name>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 11:48:46</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

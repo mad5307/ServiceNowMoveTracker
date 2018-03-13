@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Update box state</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var boxID = request.body.data.box_id;
+	var gr = new GlideRecord('x_26578_move_track_box');
+	gr.get(boxID);
+	gr.query();
+	if(gr.next()){
+		gr.box_state = request.body.data.box_state;
+		gr.update();
+	}else{
+		return {'Status':'Not Successful:Unable to find box for selected move'};
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_26578_move_track/boxes/update_state</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/update_state</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>madeleonardis</sys_created_by>
+        <sys_created_on>2017-12-16 22:11:18</sys_created_on>
+        <sys_id>4e6f9a424f8f03008928a7d18110c741</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Update box state</sys_name>
+        <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+        <sys_update_name>sys_ws_operation_4e6f9a424f8f03008928a7d18110c741</sys_update_name>
+        <sys_updated_by>madeleonardis</sys_updated_by>
+        <sys_updated_on>2017-12-17 23:23:24</sys_updated_on>
+        <web_service_definition display_value="Boxes">073f1a424f8f03008928a7d18110c748</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

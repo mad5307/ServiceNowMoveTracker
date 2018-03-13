@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Move">a2fe17c14f0303008928a7d18110c7c6</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="checklist_item">checklist.tableLIKEbox^EQ<item endquery="false" field="checklist.table" goto="false" newquery="false" operator="LIKE" or="false" value="box"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Box Contents</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>checklist_item</name>
+        <order>300</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>^GROUPBYchecklist.document</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>madeleonardis</sys_created_by>
+        <sys_created_on>2018-01-03 15:40:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9083b1bf4fdf03008928a7d18110c74a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Box Contents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+        <sys_update_name>sys_app_module_9083b1bf4fdf03008928a7d18110c74a</sys_update_name>
+        <sys_updated_by>madeleonardis</sys_updated_by>
+        <sys_updated_on>2018-01-03 17:35:56</sys_updated_on>
+        <timeline_page/>
+        <title>Box Contents</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

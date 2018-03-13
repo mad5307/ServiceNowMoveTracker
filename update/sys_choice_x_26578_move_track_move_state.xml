@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_26578_move_track_move" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Planning</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>0</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2052b094f0303008928a7d18110c7fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>planning</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Packing</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>1</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26052b094f0303008928a7d18110c7fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>packing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ready</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>2</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2052b094f0303008928a7d18110c7ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>ready</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Moving</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>3</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22056b094f0303008928a7d18110c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>moving</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unpacking</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>4</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae056b094f0303008928a7d18110c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>unpacking</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_26578_move_track_move</name>
+            <sequence>5</sequence>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e056b094f0303008928a7d18110c701</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_26578_move_track_move</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>madeleonardis</sys_created_by>
+            <sys_created_on>2017-12-14 00:36:49</sys_created_on>
+            <sys_id>ee052b094f0303008928a7d18110c7fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Move Tracker" source="x_26578_move_track">185e13814f0303008928a7d18110c7d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Move Tracker">185e13814f0303008928a7d18110c7d9</sys_scope>
+            <sys_update_name>sys_choice_x_26578_move_track_move_state</sys_update_name>
+            <sys_updated_by>madeleonardis</sys_updated_by>
+            <sys_updated_on>2017-12-14 00:36:49</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

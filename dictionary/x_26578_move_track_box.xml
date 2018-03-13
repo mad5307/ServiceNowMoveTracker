@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Box" max_length="40" name="x_26578_move_track_box" sizeclass="16" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Box number" mandatory="true" max_length="40" name="box_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" mandatory="true" max_length="40" name="box_state" type="string">
+            <choice>
+                <element label="New" sequence="0" value="new"/>
+                <element label="Packing" sequence="1" value="packing"/>
+                <element label="Packed" sequence="2" value="packed"/>
+                <element label="Moved" sequence="3" value="moved"/>
+                <element label="Unpacked" sequence="4" value="unpacked"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Content" max_length="10000" name="content" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Display name" max_length="100" name="display_name" read_only="true" type="string"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Room" mandatory="true" max_length="40" name="room" type="string">
+            <choice>
+                <element label="Living room" sequence="0" value="living room"/>
+                <element label="Dining room" sequence="1" value="dining room"/>
+                <element label="Kitchen" sequence="2" value="kitchen"/>
+                <element label="Bedroom" sequence="3" value="bedroom"/>
+                <element label="Bathroom" sequence="4" value="bathroom"/>
+                <element label="Office" sequence="5" value="office"/>
+                <element label="Storage" sequence="6" value="storage"/>
+            </choice>
+        </element>
+    </element>
+</database>
